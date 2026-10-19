@@ -1,15 +1,15 @@
 // Saathi AI - main controller. Wires modules to the dashboard.
-import { CONFIG } from 'config.js';
-import { SAY, describeDetections, objLabel } from 'phrases.js';
-import { Speech } from 'speech.js';
-import { Alerts, classify } from 'alerts.js';
-import { Sensor } from 'sensor.js';
-import { Camera } from 'camera.js';
-import { Detector } from 'detector.js';
-import { GPS } from 'gps.js';
-import { Gemini } from 'gemini.js';
-import { Voice, matchCommand } from 'voice.js';
-import { Depth } from 'depth.js';
+import { CONFIG } from './config.js';
+import { SAY, describeDetections, objLabel } from './phrases.js';
+import { Speech } from './speech.js';
+import { Alerts, classify } from './alerts.js';
+import { Sensor } from './sensor.js';
+import { Camera } from './camera.js';
+import { Detector } from './detector.js';
+import { GPS } from './gps.js';
+import { Gemini } from './gemini.js';
+import { Voice, matchCommand } from './voice.js';
+import { Depth } from './depth.js';
 
 const $ = id => document.getElementById(id);
 const el = {
