@@ -1,9 +1,8 @@
 // Saathi AI - configuration
 // The Gemini API key is NOT stored here. It is read by server.js from the GEMINI_API_KEY environment variable.
 export const CONFIG = {
+  // Backend (Railway). Used when the page is NOT served by that same server (e.g. GitHub Pages).
   API_BASE: 'https://aamir-production-320a.up.railway.app',
-  ...
-export const CONFIG = {
 
   // Prototype obstacle thresholds (cm). Not guaranteed safe distances.
   THRESHOLDS: { caution: 100, warning: 60, critical: 35, min: 20, max: 500 }, // max 500 cm = 5 m detection range
